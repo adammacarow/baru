@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
- <title>Makanan Favorit</title>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <style>
-  body {
- font-family: Arial, sans-serif;
- margin: 0;
- padding: 0;
-}
+  <title>Makanan Favorit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-header {
- background-color: #f0f0f0;
- padding: 20px;
- text-align: center;
-}
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
 
-main {
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 20px;
-}
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
 
-#makanan button {
- padding: 10px;
- margin: 10px;
- border: none;
- border-radius: 5px;
- background-color: #4CAF50;
- color: #fff;
- cursor: pointer;
-}
+    #makanan button {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
 
-#deskripsi {
- background-color: #fff;
- padding: 20px;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
- </style>
+    #deskripsi {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
+
 <body>
- <header>
- <h1>Makanan Favorit</h1>
- </header>
- <main>
- <section id="makanan">
- <h2>Pilih Makanan Favorit</h2>
- <button id="nasi-goreng">Nasi Goreng</button>
- <button id="sate">Sate</button>
- <button id="gudeg">Gudeg</button>
- </section>
- <section id="deskripsi">
- <p id="hasil"></p>
- </section>
- </main>
- <script>
-  // Fungsi untuk menampilkan deskripsi makanan
-function tampilkanDeskripsi(makanan) {
- const hasil = document.getElementById('hasil');
- switch (makanan) {
- case 'nasi-goreng':
- hasil.innerText = 'Nasi Goreng adalah makanan khas Indonesia.';
- break;
- case 'sate':
- hasil.innerText = 'Sate adalah makanan khas Jawa.';
- break;
- case 'gudeg':
- hasil.innerText = 'Gudeg adalah makanan khas Yogyakarta.';
- break;
- default:
- hasil.innerText = '';
- }
-}
+  <header>
+    <h1>Makanan Favorit</h1>
+  </header>
+  <main>
+    <section id="makanan">
+      <h2>Pilih Makanan Favorit</h2>
+      <button id="nasi-goreng">Nasi Goreng</button>
+      <button id="sate">Sate</button>
+      <button id="gudeg">Gudeg</button>
+    </section>
+    <section id="deskripsi">
+      <p id="hasil"></p>
+    </section>
+  </main>
+  <script>
+    // Fungsi untuk menampilkan deskripsi makanan
+    function tampilkanDeskripsi(makanan) {
+      const hasil = document.getElementById('hasil');
+      switch (makanan) {
+        case 'nasi-goreng':
+          hasil.innerText = 'Nasi Goreng adalah makanan khas Indonesia.';
+          break;
+        case 'sate':
+          hasil.innerText = 'Sate adalah makanan khas Jawa.';
+          break;
+        case 'gudeg':
+          hasil.innerText = 'Gudeg adalah makanan khas Yogyakarta.';
+          break;
+        default:
+          hasil.innerText = '';
+      }
+    }
 
-// Menambahkan event listener pada tombol
-document.getElementById('nasi-goreng').addEventListener('click', () => tampilkanDeskripsi('nasi-goreng'));
-document.getElementById('sate').addEventListener('click', () => tampilkanDeskripsi('sate'));
-document.getElementById('gudeg').addEventListener('click', () => tampilkanDeskripsi('gudeg'));
+    // Menambahkan event listener pada tombol
+    document.getElementById('nasi-goreng').addEventListener('click', () => tampilkanDeskripsi('nasi-goreng'));
+    document.getElementById('sate').addEventListener('click', () => tampilkanDeskripsi('sate'));
+    document.getElementById('gudeg').addEventListener('click', () => tampilkanDeskripsi('gudeg'));
 
- </script>
+  </script>
 </body>
-</html>
 
+</html>
