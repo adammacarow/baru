@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
 <body>
 
     <h1 id="h1">
-
+        
     </h1>
+    <h2 id="demo"></h2>
     <script>
         console.info("info dua")
         console.error("errorrr")
@@ -22,8 +24,8 @@
         const namaA = "Basri"
         const value = 90
         const stringTemp = `name: ${name} ${namaT} ${namaA}  nilai : ${value > 70}`
-       
-        
+
+
         document.getElementById("h1").textContent = stringTemp;
         document.getElementById("h1").style.color = "blue";
 
@@ -39,7 +41,48 @@
         document.writeln("<pre>")
         document.writeln(multi)
         document.writeln("</pre>")
+        ////////
+        let result = 1 + 2;
+        document.writeln("<p>1 + 2 = " + result + "</p>");
+        let originalResult = result; // 3
+
+        result -= 1; // 2
+        document.writeln("<p>" + originalResult + " -1 = " + result + "</p>");
+        originalResult = result; // 2
+
+        result *= 2; // 4
+        document.writeln("<p>" + originalResult + " * 2 = " + result + "</p>");
+        //// switch
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "ahad";
+                break;
+            case 1:
+                day = "senen";
+                break;
+            case 2:
+                day = "selasa";
+                break;
+            case 3:
+                day = "rebo";
+                break;
+            case 4:
+                day = "kamis";
+                break;
+            case 5:
+                day = "jumat";
+                break;
+            case 6:
+                day = "sabtu";
+        }
+
+        document.getElementById("demo").innerHTML = "jel0 nene " + day;
+        document.getElementById("demo").style.backgroundColor = "green";
+        document.getElementById("demo").style.color = "lightblue";
+
 
     </script>
 </body>
+
 </html>
