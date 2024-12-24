@@ -23,11 +23,16 @@
         .countdown {
             font-size: 2rem;
         }
+
+        #puasa {
+            background-color: greenyellow;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
-    <div> BENTAR LAGI BULAN PUASA</div>
+    <div id="puasa"> BENTAR LAGI BULAN PUASA</div>
     <div class="countdown" id="countdown">
         Loading...
     </div>
@@ -53,11 +58,13 @@
 
         // string multiline
 
-        const multi = `testt teststes 
-        testse 
-        tests tetests teststs 
-        yesye
+        const multi = `
+        test tests test
         test
+        test
+        test test test test test
+        test test test
+        test test
         test`
 
         document.writeln("<pre>")
