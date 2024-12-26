@@ -33,6 +33,9 @@
         .example{
             color: greenyellow;
         }
+        h3 {
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -53,7 +56,7 @@
     <div class="example">Element1</div>
     <div class="example">Element2</div>
    <!-- terhapuss semua-->
-    <button onclick="funsiKu()"></button>
+    <button onmouseleave="funsiKu()"></button>
    <!-- terhapuss semua-->
     <script>
         console.info("info dua")
@@ -165,7 +168,7 @@
 
 function funsiKu() {
   document.open();
-  document.write("<h1>Hello World</h1>");
+  document.write("<h3></h3>");
   document.close();
 }
     </script>
