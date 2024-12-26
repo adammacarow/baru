@@ -17,9 +17,11 @@
             justify-content: center;
             height: 100vh;
         }
+
         h1 {
             font-size: 3rem;
         }
+
         .countdown {
             font-size: 2rem;
         }
@@ -28,18 +30,27 @@
             background-color: greenyellow;
             color: black;
         }
+        .example{
+            color: greenyellow;
+        }
     </style>
 </head>
 
 <body>
+    
+
     <div id="puasa"> BENTAR LAGI BULAN PUASA</div>
     <div class="countdown" id="countdown">
         Loading...
     </div>
     <h1 id="h1">
-        
+
     </h1>
     <h2 id="demo"></h2>
+   
+    <div class="example">Element1</div>
+    <div class="example">Element2</div>
+   
     <script>
         console.info("info dua")
         console.error("errorrr")
@@ -109,10 +120,9 @@
         document.getElementById("demo").innerHTML = "jel0 nene " + day;
         document.getElementById("demo").style.backgroundColor = "green";
         document.getElementById("demo").style.color = "lightblue";
-//
+        //
 
-
-//// tahun baru
+        //// tahun baru
         const countdownElement = document.getElementById('countdown');
 
         function updateCountdown() {
@@ -125,20 +135,26 @@
                 countdownElement.textContent = "Selamat Menunaikan puasa 2025!";
                 return;
             }
-
             const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
             countdownElement.textContent = `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`;
         }
 
         setInterval(updateCountdown, 1000);
         updateCountdown(); // Initial call to avoid delay
 
+        /* JavaScript Dates
+        The internal clock in JavaScript starts at midnight January 1, 1970
+        Date.now() returns the number of milliseconds since January 1, 1970 00:00:00 UTC */
+        let ms = Date.now();
+        document.write(ms);
 
-
+        // getElementsByClassName()
+        const collection = document.getElementsByClassName("example");
+        collection[1].innerHTML = "Hello World!";
+        collection[0].innerHTML = "hello word wacth";
     </script>
 </body>
 
