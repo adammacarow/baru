@@ -30,9 +30,11 @@
             background-color: greenyellow;
             color: black;
         }
-        .example{
+
+        .example {
             color: greenyellow;
         }
+
         h3 {
             background-color: black;
         }
@@ -40,9 +42,9 @@
 </head>
 
 <body>
-   
+
     <marquee behavior="t" direction="right">Jack</marquee>
-   
+
 
     <div id="puasa"> BENTAR LAGI BULAN PUASA</div>
     <div class="countdown" id="countdown">
@@ -52,12 +54,15 @@
 
     </h1>
     <h2 id="demo"></h2>
-   
+
     <div class="example">Element1</div>
     <div class="example">Element2</div>
-   <!-- terhapuss semua-->
+    <!-- terhapuss semua-->
     <button onmouseleave="funsiKu()"></button>
-   <!-- terhapuss semua-->
+    <!-- terhapuss semua-->
+
+    <!--orang-->
+    <div id="orang"></div>
     <script>
         console.info("info dua")
         console.error("errorrr")
@@ -163,14 +168,23 @@
         collection[1].innerHTML = "Hello World!";
         collection[0].innerHTML = "hello word wacth";
 
-        
 
 
-function funsiKu() {
-  document.open();
-  document.write("<h3></h3>");
-  document.close();
-}
+
+        function funsiKu() {
+            document.open();
+            document.write("<h3></h3>");
+            document.close();
+        }
+        // Type Data Object
+
+        const orang = {};
+
+        orang["nama"] = "Hasanul Bin Basri";
+        orang["alamat"] = "Denpasar";
+        orang["umur"] = 36;
+
+        console.table(orang);
     </script>
 </body>
 
