@@ -37,7 +37,9 @@
 </head>
 
 <body>
+    <button onclick="funsiKu()">Hapus Semua</button>
     <marquee behavior="t" direction="right">Jack</marquee>
+   
 
     <div id="puasa"> BENTAR LAGI BULAN PUASA</div>
     <div class="countdown" id="countdown">
@@ -155,6 +157,15 @@
         const collection = document.getElementsByClassName("example");
         collection[1].innerHTML = "Hello World!";
         collection[0].innerHTML = "hello word wacth";
+
+        
+
+
+function funsiKu() {
+  document.open();
+  document.write("<h1>Hello World</h1>");
+  document.close();
+}
     </script>
 </body>
 
