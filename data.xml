@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <name>Smartphone Samsung Galaxy</name>
+        <price>5000000</price>
+        <description>Smartphone canggih dengan layar AMOLED dan kamera 108MP.</description>
+    </product>
+    <product>
+        <name>Laptop Dell XPS 13</name>
+        <price>15000000</price>
+        <description>Laptop premium dengan prosesor Intel Core i7 dan desain tipis.</description>
+    </product>
+    <product>
+        <name>Earphone Sony WF-1000XM4</name>
+        <price>2500000</price>
+        <description>Earphone dengan noise-cancelling dan kualitas suara luar biasa.</description>
+    </product>
+</products>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sederhana Gabungan XML dan HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .data-container {
+            margin-top: 20px;
+        }
+        .data-item {
+            padding: 10px;
+            background-color: #ecf0f1;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Produk</h1>
+
+    <div class="data-container" id="product-list">
+        <!-- Data dari XML akan dimuat di sini -->
+    </div>
+
+    <script>
+        // Fungsi untuk memuat dan menampilkan data dari file XML
+        function loadXMLData() {
+            // Mengambil elemen tempat data akan ditampilkan
+            var container = document.getElementById("product-list");
+
+            // Membuat request untuk mengambil file XML
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "data.xml", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Parse XML yang diterima
+                    var xmlDoc = xhr.responseXML;
+                    
+                    // Mengambil semua elemen <product> dari XML
+                    var products = xmlDoc.getElementsByTagName("product");
+
+                    // Loop untuk menampilkan setiap produk
+                    for (var i = 0; i < products.length; i++) {
+                        var product = products[i];
+
+                        // Mendapatkan informasi produk
+                        var name = product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+                        var price = product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+                        var description = product.getElementsByTagName("description")[0].childNodes[0].nodeValue;
+
+                        // Membuat elemen untuk menampilkan produk
+                        var productDiv = document.createElement("div");
+                        productDiv.classList.add("data-item");
+
+                        productDiv.innerHTML = `
+                            <strong>${name}</strong><br>
+                            Harga: Rp ${price}<br>
+                            Deskripsi: ${description}
+                        `;
+
+                        // Menambahkan elemen produk ke dalam container
+                        container.appendChild(productDiv);
+                    }
+                }
+            };
+
+            // Mengirim request
+            xhr.send();
+        }
+
+        // Memanggil fungsi untuk memuat data saat halaman dimuat
+        window.onload = loadXMLData;
+    </script>
+</body>
+</html>
