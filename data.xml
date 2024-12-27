@@ -15,4 +15,9 @@
         <price>2500000</price>
         <description>Earphone dengan noise-cancelling dan kualitas suara luar biasa.</description>
     </product>
+     <product>
+        <name>Oarphone Sony WF-1000XM4</name>
+        <price>3500000</price>
+        <description>Warphone dengan noise-cancelling dan kualitas suara luar biasa.</description>
+    </product>
 </products>
