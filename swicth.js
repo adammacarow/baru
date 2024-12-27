@@ -102,12 +102,12 @@ switch (customerCategory) {
 
 console.log("Diskon Anda: " + discount + "%");
 
-
-let paymentStatus = "Lunas";
-
 /**5. Mengecek Status Pembayaran
 
 Misalnya, dalam aplikasi pembayaran, kita bisa menggunakan switch untuk menangani status pembayaran (lunas, pending, atau gagal). */
+
+
+let paymentStatus = "Lunas";
 
 switch (paymentStatus) {
     case "Lunas":
