@@ -107,7 +107,7 @@ console.log("Diskon Anda: " + discount + "%");
 Misalnya, dalam aplikasi pembayaran, kita bisa menggunakan switch untuk menangani status pembayaran (lunas, pending, atau gagal). */
 
 
-let paymentStatus = "Lunas";
+let paymentStatus = "Gagal";
 
 switch (paymentStatus) {
     case "Lunas":
@@ -123,4 +123,12 @@ switch (paymentStatus) {
         console.log("Status pembayaran tidak dikenali.");
 }
 
+
+// type Data 
+
+let data = 5.6; // "String" , trus / false , 100, 
+
+const typeData = typeof data;
+console.log(`<p> ${typeData} </p>`);
+document.writeln(`<p> ${typeData} </p>`);
 
