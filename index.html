@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiStep Reg Form | Korsat X Parmaga</title>
+
+    <!-- link icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link css  -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Sign Up</header>
+
+        <div class="progress-bar">
+            <div class="step">
+                <div class="name">Name</div>
+                <div class="number"><span>1</span></div>
+                <i class='bx bx-check'></i>
+            </div>
+
+            <div class="step">
+                <div class="name">Contact</div>
+                <div class="number"><span>2</span></div>
+                <i class='bx bx-check'></i>
+            </div>
+
+            <div class="step">
+                <div class="name">Birth</div>
+                <div class="number"><span>3</span></div>
+                <i class='bx bx-check'></i>
+            </div>
+
+            <div class="step">
+                <div class="name">Submit</div>
+                <div class="number"><span>4</span></div>
+                <i class='bx bx-check'></i>
+            </div>
+        </div>
+
+        <div class="form-outer">
+            <form action="#">
+                <div class="slide">
+                    <div class="title">Basic Info :</div>
+                    <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <div class="label">Last Name</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">Contact Info :</div>
+                    <div class="field">
+                        <div class="label">Email Address</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <div class="label">Phone Number</div>
+                        <input type="tel">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev">Previous</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">Date of Birth :</div>
+                    <div class="field">
+                        <div class="label">Date</div>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <div class="label">Gender</div>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="field btns">
+                        <button class="prev">Previous</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">Login Details :</div>
+                    <div class="field">
+                        <div class="label">Username</div>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <div class="label">Password</div>
+                        <input type="password">
+                    </div>
+                    <div class="field btns">
+                        <button class="prev">Previous</button>
+                        <button class="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- link js  -->
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
