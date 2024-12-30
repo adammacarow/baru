@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" type="image/x-icon" href="/smile-kuning.ico">
     <script type="module" src="swicth.js"></script>
-    
+
     <title>String Template</title>
     <style>
         body {
@@ -42,12 +42,25 @@
         h3 {
             background-color: black;
         }
+
+        .blue {
+            background-color: blue;
+            color: whitesmoke;
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .blues {
+            background-color: blueviolet;
+        }
     </style>
 </head>
 
 <body>
 
-    <marquee behavior="t" direction="right">Jack</marquee>
+    <marquee behavior="t" direction="right" class="blue">Jack</marquee>
+    <marquee behavior="t" direction="left" class="blues">Jack</marquee>
 
 
     <div id="puasa"> BENTAR LAGI BULAN PUASA</div>
@@ -190,25 +203,23 @@
 
         console.table(orang);
 
-        // Popop Promt
+        // // Popop Promt
 
-        const namaKamu = prompt("siapa nama kamiu");
-        //alert(`hello ${namaKamu}`);
-        console.log(`hello ${namaKamu}`);
-        // Popup Confirm
+        // const namaKamu = prompt("siapa nama kamiu");
+        // //alert(`hello ${namaKamu}`);
+        // console.log(`hello ${namaKamu}`);
+        // // Popup Confirm
 
-        const masuk = confirm("Anda Yakin Akan Mecelep?");
-        if(masuk){
-            const namee = prompt("Mama kamu Siapa?");
-            //alert(`Hello ${namee}`); 
-            console.log(`Hello ${namee}`);
-        }else{
-            //alert("Selamat Jalam");
-            console.log("Selamat Jalam");
-        }
-
-
-       
+        // const masuk = confirm("Anda Yakin Akan Mecelep?");
+        // if(masuk){
+        //     const namee = prompt("Mama kamu Siapa?");
+        //     //alert(`Hello ${namee}`);
+        //     console.log(`Hello ${namee}`);
+        // }else{
+        //     //alert("Selamat Jalam");
+        //     console.log("Selamat Jalam");
+        // }
+        // // Popup Alert      
     </script>
 </body>
 
